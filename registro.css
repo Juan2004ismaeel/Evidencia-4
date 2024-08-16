@@ -1,0 +1,127 @@
+/* Estilos generales */
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 18px;
+	background-color: #000000; /* Negro */
+	color: #007bff; /* Azul */
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	text-align: center;
+	font-size: 40px;
+	margin: 40px 0;
+	color: #007bff; /* Azul */
+	font-weight: 700; /* Negrita */
+	text-transform: uppercase; /* Mayúsculas */
+}
+
+form {
+	max-width: 600px;
+	margin: 0 auto;
+	background-color: #333333; /* Gris oscuro */
+	padding: 40px;
+	box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+	border-radius: 12px; /* Bordes más redondeados */
+	border: 2px solid #007bff; /* Borde azul */
+}
+
+label {
+	display: block;
+	font-size: 18px;
+	margin-bottom: 10px;
+	color: #007bff; /* Azul */
+	font-weight: 500; /* Semi-negrita */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	display: block;
+	width: 100%;
+	padding: 15px;
+	font-size: 16px;
+	border: 2px solid #555555; /* Gris oscuro */
+	border-radius: 8px; /* Bordes más redondeados */
+	background-color: #222222; /* Gris muy oscuro */
+	margin-bottom: 20px;
+	box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.3);
+	color: #007bff; /* Azul */
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+	background-color: #333333; /* Gris oscuro */
+	border-color: #007bff; /* Azul */
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+}
+
+button[type="submit"] {
+	display: block;
+	margin: 30px auto 0; /* Centrado en el contenedor con margen superior */
+	padding: 20px 40px; /* Tamaño aumentado */
+	font-size: 20px; /* Tamaño de fuente aumentado */
+	color: #ffffff; /* Blanco */
+	background: #e74c3c; /* Rojo sólido */
+	border: none;
+	border-radius: 50px; /* Bordes redondeados completos */
+	box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+	text-align: center; /* Asegura que el texto esté centrado */
+}
+
+button[type="submit"]:hover {
+	background: #c0392b; /* Rojo oscuro */
+	box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+	transform: translateY(-3px); /* Efecto de elevación */
+}
+
+a {
+	color: #007bff; /* Azul */
+	text-decoration: none;
+	font-weight: 500; /* Semi-negrita */
+}
+
+a:hover {
+	color: #0056b3; /* Azul oscuro */
+	text-decoration: underline;
+}
+
+p {
+	margin-top: 20px;
+	font-size: 18px;
+	text-align: center;
+	color: #007bff; /* Azul */
+}
+
+/* Estilos específicos del formulario de registro */
+#username:focus,
+#email:focus,
+#password:focus,
+#password_confirm:focus {
+	background-color: #333333; /* Gris oscuro */
+	border-color: #007bff; /* Azul */
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+}
+
+#username:invalid,
+#email:invalid,
+#password:invalid,
+#password_confirm:invalid {
+	border-color: #e74c3c; /* Rojo claro */
+}
+
+#username:valid,
+#email:valid,
+#password:valid,
+#password_confirm:valid {
+	border-color: #28a745; /* Verde */
+}
+
+#password_confirm {
+	margin-bottom: 30px;
+}
